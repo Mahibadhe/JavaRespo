@@ -1,0 +1,4 @@
+class Testt
+{
+   System.out.print("Welcome");
+}
