@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+       <input style="background-color: chartreuse;"  type="text" placeholder="Enter Tag">
+       <input style="background-color: chartreuse;" type="text" placeholder="Enter">
+       <button onclick="show()">Submit</button>
+    </div>
+    <script>
+//      function show(){
+//         var tag=document.getElementsByTagName("input")[0].value
+
+//         var txt=document.getElementsByTagName("input")[1].value
+   
+//     var ele=document.createElement(tag)
+//     console.log(ele);
+
+//     var eletxt=document.createTextNode(txt)
+//     console.log(eletxt);
+
+//    ele.appendChild(eletxt)
+//    console.log(ele);
+//      }
+
+   function show(){
+   var tag=prompt("tag")
+   var txt=prompt("txt")
+
+    var ele=document.createElement(tag)
+    console.log(ele);
+
+    var eletxt=document.createTextNode(txt)
+    console.log(eletxt);
+
+   ele.appendChild(eletxt)
+   console.log(ele);
+
+     }
+     show()
+    </script>
+</body>
+</html>

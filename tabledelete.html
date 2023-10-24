@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <button onclick="show()">SHOW Data</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+    </table>
+
+
+    <script>
+        var emp = [
+            { name: "Vinay", email: "vinay@gmail.com", con: 4738756293 },
+            { name: "Dheeraj", email: "dheeraj@gmail.com", con: 4738756293 },
+        ]
+        function show() {
+            var table_body = document.getElementsByTagName('tbody')[0];
+            table_body.innerHTML = "";
+            for (i = 0; i < emp.length; i++) {
+                table_body.innerHTML += `
+                <tr>
+                    <td>${emp[i].name}</td>
+                    <td>${emp[i].email}</td>
+                    <td>${emp[i].con}</td>
+                    <td><button onclick="del(${i})">DELETE</button></td>
+                </tr>
+                `
+               
+            }
+        }
+        function del(ind){
+        emp.splice(ind,1)
+        
+            console.log(emp);
+            show()
+        }
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending</title>
+</head>
+<body>
+    <script>
+        var Fullfield=true
+        var prom=new Promise(function(complete,reject){
+            if(true){
+                complete("complete: Its True")
+            }
+            else{
+                reject("Reject: its False")
+            }
+        console.log(prom);
+
+        })
+        var Fullfield=true
+        var prom=new Promise(function(complete,reject){
+            console.log("Please Wait..");
+            setTimeout(function(){
+                if(Fullfield){
+                    complete("Complete: Its True")
+                }
+                else{
+                    reject("Reject: Its False")
+                }
+            },5000)
+            })
+        console.log(prom);
+    </script>
+</body>
+</html>

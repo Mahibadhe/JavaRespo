@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AppendChild Example</title>
+</head>
+<body>
+    <h1>Appending Elements</h1>
+    
+    <button onclick="addParagraph()">Add Paragraph</button>
+
+    <script>
+        // Function to add a new paragraph to the body
+        function addParagraph() {
+            // Create a new paragraph element (<p>)
+            const newParagraph = document.createElement("p");
+
+            // Set the text content for the new paragraph
+            newParagraph.textContent = "This is a new paragraph added using appendChild.";
+
+            // Get a reference to the body element and append the new paragraph
+            document.body.appendChild(newParagraph);
+        }
+    </script>
+</body>
+</html>

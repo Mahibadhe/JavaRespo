@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show(){
+
+       
+    var _input=document.createElement("input")
+    console.log(_input)
+
+    var _body=document.getElementsByTagName('body')[0]
+    _body.appendChild(_input)
+
+var input_tag=document.getElementsByTagName('input')[0]
+input_tag.setAttribute("value"," ")
+
+var btn=document.createElement('button')
+var btnText=document.createTextNode('View')
+btn.appendChild(btnText)
+_body.appenChild(btn)
+
+var _btn=document.getElementsByTagName('button')[0]
+
+_btn.setAttribute('onclick','submit()');
+
+
+}
+show()
+function submit(){
+  var CallInput=document.getElementsByTagName('input')[0].value
+  console.log(CallInput);
+  var _body=document.getElementsByTagName('body')[0]
+
+  var txt=document.createTextNode(CallInput)
+
+  var _head=document.createElement('h1')
+  _head.appendChild(txt)
+_body.appenChild(_head)
+
+}
+submit()
+    </script>
+   
+</body>
+</html>

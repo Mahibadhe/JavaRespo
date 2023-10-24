@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://static.vecteezy.com/system/resources/previews/003/823/523/non_2x/background-nature-flower-mexican-aster-purple-flowers-background-blur-wallpaper-flower-space-for-text-free-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+
+  .login-container h2 {
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .submit-button {
+    background-color: #67054e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .submit-button:hover {
+    background-color: #67054e;
+  }
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login Form</h2>
+    <form>
+      <input class="input-field" type="text" placeholder="Username">
+      <input class="input-field" type="password" placeholder="Password">
+      <button class="submit-button" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

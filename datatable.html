@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .mahi{
+          border: 2px solid red;
+    height: 400px;
+    width: 25%;
+    margin-left: 520px;
+    box-shadow: 6px 6px 9px gray;
+    text-align: center;
+    background-image: url('https://img.freepik.com/premium-photo/digital-technology-transparent-colorful-flowers-abstract-graphics-poster-web-page_889131-845.jpg?size=626&ext=jpg&ga=GA1.2.1236356839.1691689646&semt=ais');
+        }
+        input{
+            width: 63%;
+    height: 27px;
+   
+    margin: 11px;
+    background-color: black;
+    box-shadow: 5px 5px 13px dark;
+  border: none;
+    outline: none;
+    background: none;
+ border-bottom: 2px solid black;
+        }
+      
+        
+        button{
+            height: 30px;
+    width: 101px;
+    border-radius: 21px;
+    background: aquamarine;
+    cursor: pointer;
+    border: none;
+    margin-top: 34px;
+        }
+        button:hover{
+            background-color: greenyellow;
+        }
+    
+table>tr>th{
+    width: 25%;
+    border: 2px solid ;
+    height: 38px;
+    box-shadow: 2px 4px 10px;
+    text-align: center;
+    
+}
+td{
+    width: 25%;
+    border: 2px solid lightgreen;
+    height: 38px;
+    box-shadow: 2px 4px 10px;
+    text-align: center;
+  
+}
+th{
+    width: 25%;
+    border: 2px solid lightgreen;
+    height: 38px;
+    box-shadow: 2px 4px 10px;
+    text-align: center;
+   
+}
+.vina{
+   
+   
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="mahi">
+            <h1 style="text-align: center;">Registration Form</h1>
+            <input type="text" placeholder="Name" class="Name" ><br>
+
+            <input   style="color: blue;"    type="text" placeholder="email" class="email"><br>
+            
+           
+            <input   onclick="match()"   type="password" placeholder="Password" class="Password"><br>
+            
+            <input type="password" placeholder="ConfirmPass" class="ConformPass"><br>
+    
+           <button type="submit" class="button" onclick="Submit()">Submit</button>
+        </div>
+        <div>
+            <table id="mytable">
+                <br>
+                <br>
+                <br>
+                <br>
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th class="vina">PASSWORD</th>
+                    <th>COMFIRM PASSWORD</th>
+                    <th></th>
+        
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+    
+                
+                   <td><button onclick="show()">DELETE</button></td>
+        
+                </tr>
+               </table>
+        </div>
+    </section>
+    <script>
+              function Submit(){
+        var Name=document.getElementsByTagName("input")[0].value
+        var email=document.getElementsByTagName("input")[1].value
+        var Password=document.getElementsByTagName("input")[2].value
+        var ConfirmPass=document.getElementsByTagName("input")[3].value
+      
+
+        
+    console.log(Name,Password,ConfirmPass,);
+    document.getElementsByTagName('td')[0].innerText=Name
+        document.getElementsByTagName('td')[1].innerText=email
+        document.getElementsByTagName('td')[2].innerText=Password
+        document.getElementsByTagName('td')[3].innerText=ConfirmPass
+        document.getElementsByTagName('td')[4]
+    
+
+    var table = document.getElementById("mytable");
+    var row = table.insertRow(1);
+
+    var vin0 =row.insertCell(0);
+    var vin1 =row.insertCell(1);
+    var vin2 =row.insertCell(2);
+    var vin3 =row.insertCell(3);
+
+    
+    vin.innerHTML = name;
+    vin.innerHTML = email;
+    vin.innerHTML = Password;
+    vin.innerHTML = ConfirmPass;
+    
+   
+ 
+
+}
+
+function show(){
+
+    document.getElementById('mytable').vin0(0);
+}
+
+
+
+    </script>
+</body>
+</html>

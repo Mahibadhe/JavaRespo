@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+section{
+    border: 2px solid aqua;
+    display: flex;
+    height: 700px;
+    text-align: center;
+
+}
+div{
+   border: 1px solid red;
+ 
+   width: 50%;
+   background-color: violet;
+   text-align: center;
+   margin: 9px;
+   padding: 12px;
+}
+input{
+    height: 60px;
+}
+
+</style>
+<body>
+    <section>
+    <div class="mahi">
+        <h1 style="text-align: center;">Registration Form</h1>
+        <input type="text" placeholder="Name" class="Name"><br>
+        
+       
+        <input type="password" placeholder="Password" class="Password"><br>
+        
+        <input type="password" placeholder="ConfirmPass" class="ConformPass"><br>
+        
+        <input type="img" placeholder="image" > <br>
+       <button type="submit" class="button" onclick="Show()">Submit</button>
+    </div>
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+        
+        <img src="" alt="">
+    </div>
+    
+</section>
+    <script>
+        function Show(){
+        var Name=document.getElementsByTagName("input")[0].value
+        var Password=document.getElementsByTagName("input")[1].value
+        var ConfirmPass=document.getElementsByTagName("input")[2].value
+        var url=document.getElementsByTagName("input")[3].value
+
+        
+    console.log(Name,Password,ConfirmPass,url);
+        document.getElementsByTagName('p')[0].innerText=Name
+        document.getElementsByTagName('p')[1].innerText=Password
+        document.getElementsByTagName('p')[2].innerText=ConfirmPass
+        document.getElementsByTagName('img')[0].src=url
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+div{
+   border: 1px solid black;
+   text-align: center;
+   background-color: black;
+   height: 500px;
+   width: 400px;
+   margin-right: 50%;
+   margin-top: 10%;
+box-shadow: 7px 7px 13px red;
+}
+
+input{
+    display: flex;
+    text-align: center;
+    height: 6px;
+    width:300px;
+    color:aqua;
+    margin: 15px;
+    padding: 30px;
+   background-color: none;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid aqua;
+    
+}
+button{
+    border: 2px solid aqua;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(2, 36, 7);
+    color: aqua;
+    border-radius: 30px;
+cursor: pointer;
+
+}
+button:hover{
+    
+    background-color: greenyellow;
+    color: black;
+}
+table>th{
+    border: 1px solid black;
+    height: 40px;
+width:100%;
+border: 2px solid red;
+
+}
+th{
+height: 40px;
+width:20%;
+border: 2px solid red;
+}
+td{
+    height: 40px;
+width:30%;
+border: 2px solid red;
+text-align: center;
+}
+</style>
+
+<body>
+    <div class="Mahi">
+        <input type="text" placeholder="Enter Name" class="name" required>
+        <input style="color: blue;"        type="email" placeholder="Enter E-mail" class="email">
+        <input type="text" placeholder="Enter Password" class="password">
+        <input type="password" placeholder="Enter Re-Password" class="ConfirmPass" required>
+        <button type="submit " id="submit" onclick="submit()">Submit</button>
+        
+    </div>
+        <table id="mohan">
+        <tr>
+     <th>Name
+     </th>
+     <th>Email</th>
+     <th>Password</th>
+     <th>Confirm-Password</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        </table >
+   <script>
+        function submit(){
+      var name=document.getElementsByTagName("input")[0].value
+      var email=document.getElementsByTagName("input")[1].value
+      var password=document.getElementsByTagName("input")[2].value
+      var ConfirmPass=document.getElementsByTagName("input")[3].value
+      
+      console.log(name,email,password,ConfirmPass);
+
+     document.getElementsByTagName("td")[0].innerText=name
+     document.getElementsByTagName("td")[1].innerText=email
+     document.getElementsByTagName("td")[2].innerText=password
+     document.getElementsByTagName("td")[3].innerText=ConfirmPass
+      
+    var mohan=document.getElementById("")
+    var moh0=document.get
+
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+
+    </script>
+</body>
+</html>

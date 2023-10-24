@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+div{ 
+    margin: 40px;
+    padding: 40px;
+    height: 600px;
+    justify-content: space-evenly;
+    width: 500px;
+  
+    color: red;
+
+}
+input{
+    height: 90px;
+    width: 400px ;
+    background-color: aquamarine;
+    color: blue;
+}
+  button{
+    height: 60px;
+    width: 300px ;
+    background-color: rgb(219, 142, 61);
+    color: greenyellow;
+    align-items: center;
+  }  
+  
+</style>
+<body>
+    <div>
+        <input type="text" placeholder="Enter Name"><br><br>
+
+        <input type="number" placeholder="Enter Contact Number"><br><br>
+        <input type="email" placeholder="Enter E-mail"><br><br>
+        <button onclick="show()">SUBMIT</button>
+        <p></p>  
+        <p></p>
+          <p></p>
+    </div>
+    <script>
+        function show(){
+            var name=document.getElementsByTagName('input')[0].value
+            var number=document.getElementsByTagName('input')[1].value
+            var email=document.getElementsByTagName('input')[2].value
+  console.log(name,number,email);
+         document.getElementsByTagName("p")[0].innerText = name
+         document.getElementsByTagName("p")[1].innerText = number
+         document.getElementsByTagName("p")[2].innerText = email
+         
+        // var cname=document.getElementsByTagName("p")[0]
+        // var cnumber=document.getElementsByTagName("p")[1]
+        // var cemail=document.getElementsByTagName("p")[2]
+       
+name.appendChild(name)
+number.appendChild(number)
+email.appendChild(email)
+
+        //    var attr=document
+        //    attr.setAttribute("class","xyz");
+        // var attr=document
+        //    attr.setAttribute("class","xyz");
+           
+            
+        }
+       show() 
+    </script>
+</body>
+</html>

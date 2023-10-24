@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+       function prem(fullfill){
+        var prem=new Promise(function(complete,reject){
+        console.log("Please Wait...");
+        setTimeout(function(){
+            if(fullfill){
+                complete("Complete: It's True")
+
+            }
+            else{
+                reject("Reject: Its False")
+            }
+            },5000)
+        })
+    }
+       let onResult=function(result){
+        console.log(result);
+       }
+       let onError=function(error){
+        console.log(error);
+
+       }
+       prem(true).then(onResult).catch(onError)
+    </script>
+</body>
+</html>

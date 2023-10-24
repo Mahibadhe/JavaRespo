@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="btn">click</button>
+    <!-- <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In odio consectetur dolorem eveniet debitis
+        aperiam
+        adipisicing elit. In odio consectetur dolorem eveniet debitis aperiamadipisicing elit. In odio consectetur
+        dolorem eveniet debitis aperiamadipisicing elit. In odio consectetur dolorem eveniet debitis aperiamadipisicing
+        elit. In odio consectetur dolorem eveniet debitis aperiamadipisicing elit. In odio consectetur dolorem eveniet
+        debitis aperiamadipisicing elit. In odio consectetur dolorem eveniet debitis aperiamadipisicing elit. In odio
+        consectetur dolorem eveniet debitis aperiam
+        adipisicing elit. In odio consectetur dolorem eveniet debitis aperiam reiciendis recusandae fugit quisquam!
+        Enim, iure debitis.</p> -->
+    <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_640.jpg" alt="">
+        
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+
+    </script>
+    <script>
+        console.log($);
+        //$ is is symbol of jQury it reepresent jQuery everytime
+        console.log(jQuery);
+
+        // $('selector').action()
+
+        $(document).ready(() => {
+            //         $('button').click(function(){
+
+            //         $('p').css('border','2px solid red')
+            // })
+
+            // $('.btn').click(function(){
+            //     $('#para').css('background','green')
+            // })
+            //        })
+
+
+            $('.btn').click(function () {
+                // $('p').hide(3000)
+                // $('p').show(3000)
+                // $('p').toggle(3000, () => {
+                //     $('p').css('border', '2px solid blue')
+                // })
+                //$('p').slideUp()
+                // $('p').slideUp(5000)
+                // $('p').slideDown(5000)
+                //$('p').slideToggle(5000)
+                // $('p').fadeOut(5000)
+                // $('p').fadeIn(5000)
+                //$('p').fadeToggle(5000)
+                $('img').fadeOut(5000)
+                $('img').fadeIn(5000)
+                // $('img').fadeToggle(5000)
+                })
+
+            })
+
+    </script>
+</body>
+
+</html>
